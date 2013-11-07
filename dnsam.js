@@ -11,7 +11,7 @@ function checkAvailable(name, callback) {
 
 for (var i=0; i<abc.length; i++) {
   for (var j=0; j<abc.length; j++) {
-    checkAvailable("lsdafjlasdfj"+abc[i] + abc[j] + ".am", sys.puts);
+    checkAvailable(abc[i] + abc[j] + ".am", sys.puts);
   }
 }
 
