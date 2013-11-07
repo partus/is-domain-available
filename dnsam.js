@@ -5,7 +5,7 @@ var abc = str.split("")
 
 function checkAvailable(name, callback) {
   dns.resolve4(name, function(e, res) {
-    if (e) console.log(name,e) 
+    if (e.errno =='ENOTFOUND') console.log(name) 
   })
 }
 
