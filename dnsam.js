@@ -1,13 +1,11 @@
 var dns = require("dns"), sys = require('sys');
 
 var str = "abcdefghijklmnopqrstuvwxyz"
-var str = "ab"
 var abc = str.split("")
 
 function checkAvailable(name, callback) {
   dns.resolve4(name, function(e, res) {
-    if (e) console.log(name) 
-    // sys.puts(arguments);
+    if (e) sys.puts(name) 
   })
 }
 
